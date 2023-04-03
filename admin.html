@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Login</title>
+</head>
+  
+<body>
+    <form action="validate.php" method="post">
+        <div class="box">
+            <h1>Admin Login</h1>
+  
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="Adminname"
+                         name="adminname" value="">
+            </div>
+  
+            <div class="textbox">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="Password"
+                         name="password" value="">
+            </div>
+  
+            <input class="button" type="submit"
+                     name="login" value="Sign In">
+        </div>
+    </form>
+</body>
+  
+</html>

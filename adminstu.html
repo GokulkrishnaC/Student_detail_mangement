@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title> STUDENT DETAILS </title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home.css">    
+    <style>
+         body {
+            background-image: url('https://www.stoodnt.com/blog/wp-content/uploads/2019/05/Masters-in-Management-Information-Services.jpg');
+            background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+form{
+    background-image: linear-gradient(180deg, lightblue, blue);
+    width:500px;
+    margin-top:5%;
+    margin-bottom:12%;
+}
+ul {
+    list-style-type: none;
+   display:inline-block center;
+   padding:10px 20px;
+   font-size:17px;
+   border:none;
+   border-radius:5px;
+   color:#fff;
+   cursor:pointer;
+
+}
+table {
+    border-spacing: 25px;
+  }
+
+    </style>
+    </head>
+
+    <body>
+        <button onclick="history.back()">Go Back</button>
+        <center>
+            <h1> STUDENT DETAILS </h1>
+ 
+         <form action="adminstu.php" method="POST">
+           
+          <table>
+           <tr>
+            <td><b>Name :</b></td>
+            <td><input type="text" name="name" required></td>
+           </tr>
+           <tr>
+            <td><b>Father Name :</b></td>
+            <td><input type="text" name="fathername" required></td>
+           </tr>
+           <tr>
+            <td><b>Mother Name :</b></td>
+            <td><input type="text" name="mothername" required></td>
+           </tr>
+           <tr>
+            <td><b>Roll No :</b></td>
+            <td><input type="text" name="rollno" required></td>
+           </tr>
+           <tr>
+            <td><b>Department :</b></td>
+            <td><input type="text" name="department" required></td>
+           </tr>
+           <tr>
+            <td><b>Year of Studying :</b></td>
+            <td><input type="text" name="yearofstudying" required></td>
+           </tr>
+           <tr>
+            <td><b>DOB :</b></td>
+            <td><input type="date" name="DOB" required></td>
+           </tr>
+           <tr>
+            <td><b>Gender :</b></td>
+            <td>
+             <input type="radio" name="gender" value="m" >Male
+             <input type="radio" name="gender" value="f" >Female
+            </td>
+           </tr>
+           <tr>
+            <td><b>Address :</b></td>
+            <td><input type="text" name="address" required></td>
+           </tr>
+           <tr>
+            <td><b>Email :</b></td>
+            <td><input type="email" name="email" required></td>
+           </tr> 
+           <tr>
+            <td><b>Mobile Number :</b></td>
+            <td><input type="text" name="mobilenumber" required></td>
+           </tr>
+           <tr><center>
+            <td><input type="submit" value="Submit" name="submit"></td></center>
+           </tr>
+          </table>
+         </form>
+        </center>
+        </body>
+        </html>
